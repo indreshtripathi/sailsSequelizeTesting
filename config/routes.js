@@ -22,9 +22,16 @@
 
 module.exports.routes = {
 
-    '/user/create': 'UserController.create',
+      'post /user/create': 'UserController.create',
+      'get /user/find/:id?': 'UserController.find',
+      'delete /user/destroy/:id?': 'UserController.destroy',
+      'put /user/update/:id?': 'UserController.update',
+      '/user/import': 'UserController.import',
 
-    /***************************************************************************
+
+
+
+  /***************************************************************************
      *                                                                          *
      * Custom routes here...                                                    *
      *                                                                          *
